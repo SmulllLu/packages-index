@@ -5,11 +5,8 @@ desc = "U-Boot image for Milk-V Meles (Dual-rank, 16G RAM), for RevyOS, 20250729
 vendor = { name = "PLCT", eula = "" }
 upstream_version = "20250729"
 
-[[metadata.service_level]]
-level = "good"
-
 [[distfiles]]
-name = "u-boot-with-spl-meles-16g-20250729.bin"
+name = "u-boot-with-spl-meles-16g.bin"
 size = 780496
 urls = [
   "mirror://revyos/extra/images/meles/20250729/u-boot-with-spl-meles-16g.bin",
@@ -22,13 +19,11 @@ sha512 = "90d7413459d232c3321c9661b8b9d3201e6efc0ed9b681bb51ddf433addc3b784704bf
 
 [blob]
 distfiles = [
-  "u-boot-with-spl-meles-16g-20250729.bin",
+  "u-boot-with-spl-meles-16g.bin",
 ]
 
 [provisionable]
 strategy = "fastboot-v1(lpi4a-uboot)"
 
 [provisionable.partition_map]
-uboot = "u-boot-with-spl-meles-16g-20250729.bin"
-
-# Manually created by Kosaka Reiya
+uboot = "u-boot-with-spl-meles-16g.bin"

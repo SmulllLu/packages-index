@@ -6,7 +6,7 @@ vendor = { name = "PLCT", eula = "" }
 upstream_version = "20250729"
 
 [[distfiles]]
-name = "u-boot-with-spl-lpi4a-main.20250729.bin"
+name = "u-boot-with-spl-lpi4a-main.bin"
 size = 1032312
 urls = [
   "mirror://revyos/extra/images/lpi4a/20250729/u-boot-with-spl-lpi4a-main.bin",
@@ -19,11 +19,11 @@ sha512 = "fd2389e3e3a8198f56a56711d8f662ab07c0f8851927111ae4b6e5d1e22cd66419d0ea
 
 [blob]
 distfiles = [
-  "u-boot-with-spl-lpi4a-main.20250729.bin",
+  "u-boot-with-spl-lpi4a-main.bin",
 ]
 
 [provisionable]
 strategy = "fastboot-v1(lpi4a-uboot)"
 
 [provisionable.partition_map]
-uboot = "u-boot-with-spl-lpi4a-main.20250729.bin"
+uboot = "u-boot-with-spl-lpi4a-main.bin"

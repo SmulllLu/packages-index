@@ -27,9 +27,3 @@ strategy = "dd-v1"
 
 [provisionable.partition_map]
 disk = "2025-03-19-15-13-e4e133.img"
-
-# This file is created by program Sync Package Index inside support-matrix
-# Run ID: 14534401353
-# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14534401353
-
-# Fix format by Kosaka Reiya

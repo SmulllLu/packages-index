@@ -1,0 +1,30 @@
+format = "v1"
+
+[metadata]
+desc = "Official OpenWRT 23.05.4 image for SiFive Unmatched"
+vendor = { name = "OpenWrt", eula = "" }
+upstream_version = "23.05.4"
+
+[[distfiles]]
+name = "openwrt-23.05.4-sifiveu-generic-sifive_unmatched-ext4-sdcard.img.gz"
+size = 8281683
+urls = [
+  "https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.4/targets/sifiveu/generic/openwrt-23.05.4-sifiveu-generic-sifive_unmatched-ext4-sdcard.img.gz",
+  "https://downloads.openwrt.org/releases/23.05.4/targets/sifiveu/generic/openwrt-23.05.4-sifiveu-generic-sifive_unmatched-ext4-sdcard.img.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "95bf32f92bd38ce7e17650c1c192aeba20424cb0918f3717864af1a8b6da912a"
+sha512 = "7ea1378c514ceb7d6d032fd6b60b5f489bf814e29de4b9f7733ff8f72e4fb147e804ce915d2477fee4645ba313d528162203a69ba493f8049ab245bc9473e7bf"
+
+[blob]
+distfiles = [
+  "openwrt-23.05.4-sifiveu-generic-sifive_unmatched-ext4-sdcard.img.gz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "openwrt-23.05.4-sifiveu-generic-sifive_unmatched-ext4-sdcard.img"

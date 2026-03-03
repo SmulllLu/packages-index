@@ -1,12 +1,9 @@
 format = "v1"
 
 [metadata]
-desc = "Official Bianbu Desktop v2.1.1 for SpacemiT K1, SD image"
+desc = "Official Bianbu Desktop v2.1.1 for SpacemiT K1"
 vendor = { name = "SpacemiT", eula = "" }
 upstream_version = "v2.1.1"
-
-[[metadata.service_level]]
-level = "good"
 
 [[distfiles]]
 name = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip"

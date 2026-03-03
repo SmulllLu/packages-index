@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "RockOS 20241130_20241226 image for Milk-V Megrez with EIC7700"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20241130_20241226"
+
+[[distfiles]]
+name = "sdcard-rockos-20241226-094344.img.zst"
+size = 2633787528
+urls = [
+  "https://mirror.iscas.ac.cn/rockos/images/generic/20241130_20241226/sdcard-rockos-20241226-094344.img.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "1d8f20268c1a48c30e65c07e900e60ff698c0b2f3716872b880313d1519cba26"
+sha512 = "6ede80ed79438f5ada5cb45f81bb95ffa008ffa7f444d812ed8db9648dbbba33a0a3ac985a4e8d599f215d0ef30afc7db22a9b3412d4c147860f9f9c1e6706ef"
+
+[blob]
+distfiles = [
+  "sdcard-rockos-20241226-094344.img.zst",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "sdcard-rockos-20241226-094344.img"

@@ -9,7 +9,7 @@ upstream_version = "20260114"
 name = "2026-01-14-16-03-d4003f.tar.xz"
 size = 171913924
 urls = [
-  "https://github.com/sipeed/LicheeRV-Nano-Build/releases/download/20260114/2026-01-14-16-03-d4003f.img.xz",
+  "https://github.com/sipeed/LicheeRV-Nano-Build/releases/download/20260114/2026-01-14-16-03-d4003f.tar.xz",
 ]
 restrict = ["mirror"]
 

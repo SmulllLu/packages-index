@@ -1,0 +1,30 @@
+format = "v1"
+
+[metadata]
+desc = "Official Ubuntu 20.04.5 Server image for SiFive HiFive Unmatched"
+vendor = { name = "Ubuntu", eula = "" }
+upstream_version = "20.04.5"
+
+[[distfiles]]
+name = "ubuntu-20.04.5-preinstalled-server-riscv64+unmatched.img.xz"
+size = 448055324
+urls = [
+  "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/releases/20.04.5/release/ubuntu-20.04.5-preinstalled-server-riscv64+unmatched.img.xz",
+  "https://cdimage.ubuntu.com/releases/20.04.5/release/ubuntu-20.04.5-preinstalled-server-riscv64+unmatched.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "1bf33577ca850e0e5669f0ec55abb0fd14946937ec726b6d05d67d11e983b430"
+sha512 = "944607e9772990072f97e2d26aac8ba206b67ca466a72beb84a4d64a6bec82406e8a90b9759f37065acf7ef4e2c73f0152da51f262ee6bfb2be4090b9d3a3953"
+
+[blob]
+distfiles = [
+  "ubuntu-20.04.5-preinstalled-server-riscv64+unmatched.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "ubuntu-20.04.5-preinstalled-server-riscv64+unmatched.img"

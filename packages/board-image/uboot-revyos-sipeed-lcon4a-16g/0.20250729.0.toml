@@ -7,15 +7,15 @@ upstream_version = "20250729"
 
 [[distfiles]]
 name = "u-boot-with-spl-lcon4a-16g.bin"
-size = 1032072
+size = 1032200
 urls = [
   "mirror://revyos/extra/images/lcon4a/20250729/u-boot-with-spl-lcon4a-16g.bin",
 ]
 restrict = ["mirror"]
 
 [distfiles.checksums]
-sha256 = "8b0ea688e332c3581e655befc19a20ce46be5ed3c645f2a21f52f090df3bfc6d"
-sha512 = "ba6825ec4a4e6656a8bf511845bac3c2a7a71a00bc438dad625044b7b8ac88a8cd6928dd6c45609fdd70b6c264d9cc59fa392c0a639fe09526514ea903b21749"
+sha256 = "0028aff1f77bc424cd8033dc08080a3081320524efca4eff8caf58481e99ae47"
+sha512 = "f58d106fbd3e84191e470be805f5c5d65436155607467a46953ad9b7de37ea212fbf1d8d74dd56d45d6c760d7b9746a8ee30043fba7900ec2c05c03583a5448c"
 
 [blob]
 distfiles = [

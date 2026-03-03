@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Buildroot SDK & FreeRTOS image for Sipeed LicheeRV Nano, 20240226"
+vendor = { name = "Sipeed", eula = "" }
+upstream_version = "20240226"
+
+[[distfiles]]
+name = "20240226-0544.img.lz4"
+size = 13651840
+urls = [
+  "https://github.com/sipeed/LicheeRV-Nano-Build/releases/download/20240226/20240226-0544.img.lz4",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "797b1863afa96991a76595d2d9faf7d4b83578138db9bc024c94fb2263ec0969"
+sha512 = "5be01a28281d3fc3352d7c8985e2722860c6655a50661a67b48c8b6122a0d54121281d5c3c50738039d9e43a509c45185b3a1829077bc6db2f819b10d59cdd1f"
+
+[blob]
+distfiles = [
+  "20240226-0544.img.lz4",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "20240226-0544.img"
