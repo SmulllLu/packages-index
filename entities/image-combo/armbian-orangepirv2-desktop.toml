@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:armbian-orangepirv2@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Armbian (xfce desktop) for Orange Pi RV2"
+package_atoms = ["board-image/armbian-orangepirv2-desktop"]

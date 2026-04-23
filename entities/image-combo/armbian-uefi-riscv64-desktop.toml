@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:armbian-uefi-riscv64@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Armbian (xfce desktop) for UEFI RISC-V64"
+package_atoms = ["board-image/armbian-uefi-riscv64-desktop"]
